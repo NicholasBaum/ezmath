@@ -7,6 +7,22 @@
         {
             "question": "Was sind die ganzen Zahlen Z?",
             "answer": "Die Zahlen ... -3, -2, -1, 0, 1, 2, 3, 4 ..., also die natürlichen Zahlen um die Negativen ergänzt."
-        }
+        },
+        {
+            "question": "Ist eine natürliche Zahl eine ganze Zahl?",
+            "answer": "Ja jede natürliche Zahl ist auch eine ganze Zahl."
+        },
+        {
+            "question": "Zu welcher Zahlenmenge gehört -333?",
+            "answer": "-333 ist eine ganze Zahl und auch rationale Zahl, aber keine natürliche Zahl."
+        },
+        {
+            "question": "Was sind die ratioanlen Zahlen Q?",
+            "answer": "Die ratioanlen Zahlen sind Brüche bei denen der Nenner als auch der Zähler eine ganze Zahl sind. Auch Kommazahlen bzw. Dezimalzahlen sind rationale Zahlen."
+        },
+        {
+            "question": "Wie kann man zeigen, dass jede rationale Zahl eine Kommazahl ist?",
+            "answer": "Indem man den Bruch in eine Kommazahl umwandelt. Dazu erweitert man den Bruch so, dass der Nenner 10, 100, 1000... ist."
+        }        
     ]
 }
