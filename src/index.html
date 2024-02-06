@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EzMath</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body class="ligdht">
+    <div>
+        <div id="container" class="card">
+            <p id="question"></p>
+            <button id="showAnswer">Antwort</button>
+            <p id="answer"></p>
+            <button id="next">Nächste</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = -1;
+        let data;
+        let panel = document.querySelector("#question");
+
+        async function init() {
+            let response = await fetch("data.json");
+            data = await response.json();
+
+            document.querySelector("#next").addEventListener("click", () => {
+                showNextQuestion();
+            });
+
+            document.querySelector("#showAnswer").addEventListener("click", function () {
+                document.querySelector("#answer").innerHTML = data.questions[currentIndex].answer;
+                document.querySelector("#answer").style.display = "block";
+                document.querySelector("#showAnswer").style.display = "none";
+                document.querySelector("#next").style.display = "block";
+            });
+
+            showNextQuestion();
+        }
+
+        function showNextQuestion() {
+            document.querySelector("#next").style.display = "none";
+            document.querySelector("#answer").style.display = "none";
+            document.querySelector("#showAnswer").style.display = "block";
+            document.querySelector("#next").style.display = "none";
+            panel.innerHTML = data.questions[++currentIndex].question;
+        }
+
+        init();
+
+    </script>
+</body>
+
+</html>
