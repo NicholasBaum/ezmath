@@ -1,3 +1,36 @@
-.card{
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.root {
+    display: flex;
     background-color: #556BF4;
+    height: 100%;
+}
+
+.card {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: bold;
+    color: white;
+    text-align: center;
+}
+
+.answer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: white;
 }
