@@ -23,7 +23,7 @@ body {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -40,6 +40,10 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
     color: white;
+}
+
+.button-cell {
+    width: 100%;
 }
 
 button {
