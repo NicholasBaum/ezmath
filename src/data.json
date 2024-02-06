@@ -1,12 +1,12 @@
 {
     "questions": [
         {
-            "question": "Defintion of Pi?",
-            "answer": "Life"
+            "question": "Was sind die natürlichen Zahlen N?",
+            "answer": "Die Zahlen 1, 2, 3 ..., also die positiven ganzen Zahlen."
         },
         {
-            "question": "Why is math so good",
-            "answer": "not real"
+            "question": "Was sind die ganzen Zahlen Z?",
+            "answer": "Die Zahlen ... -3, -2, -1, 0, 1, 2, 3, 4 ..., also die natürlichen Zahlen um die Negativen ergänzt."
         }
     ]
 }
