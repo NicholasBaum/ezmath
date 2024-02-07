@@ -13,7 +13,7 @@
 <body>
     <div class="root">
         <div class="card">
-            <div>
+            <div style="overflow-y: auto;">
                 <p id="question" class="question"></p>
                 <p id="answer" class="answer"></p>
             </div>
@@ -55,6 +55,10 @@
             nextBtn.style.display = "none";
             currentIndex = (currentIndex + 1) % questions.length;
             question.innerHTML = questions[currentIndex].question;
+        }
+
+        function fitText(width, height){
+
         }
 
         init();
