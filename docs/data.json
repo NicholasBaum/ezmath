@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Was sind die natürlichen Zahlen N?",
+            "answer": "Die Zahlen 1, 2, 3 ..., also die positiven ganzen Zahlen."
+        },
+        {
+            "question": "Was sind die ganzen Zahlen Z?",
+            "answer": "Die Zahlen ... -3, -2, -1, 0, 1, 2, 3, 4 ..., also die natürlichen Zahlen um die Negativen ergänzt."
+        },
+        {
+            "question": "Ist eine natürliche Zahl eine ganze Zahl?",
+            "answer": "Ja jede natürliche Zahl ist auch eine ganze Zahl."
+        },
+        {
+            "question": "Zu welcher Zahlenmenge gehört -333?",
+            "answer": "-333 ist eine ganze Zahl und auch rationale Zahl, aber keine natürliche Zahl."
+        },
+        {
+            "question": "Was sind die ratioanlen Zahlen Q?",
+            "answer": "Die ratioanlen Zahlen sind Brüche bei denen der Nenner als auch der Zähler eine ganze Zahl sind. Auch Kommazahlen bzw. Dezimalzahlen sind rationale Zahlen."
+        },
+        {
+            "question": "Was sind Dezimalzahlen?",
+            "answer": "Kommazahlen."
+        },
+        {
+            "question": "Wie kann man zeigen, dass jede rationale Zahl eine Kommazahl ist?",
+            "answer": "Indem man den Bruch in eine Kommazahl umwandelt. Dazu erweitert man den Bruch so, dass der Nenner 10, 100, 1000... ist."
+        },
+        {
+            "question": "Gibt es einen Unterschied zwischen der Zahl 0,0564600 und 0,05646?",
+            "answer": "Nein, die am Ende einer Zahl stehen und hinter dem Komma kann man weglassen. Dasselbe gilt für Nullen die ganz links bei einer Zahl stehen."
+        },
+        {
+            "question": "Wie erweitert man Brüche?",
+            "answer": "Indem man sich eine Zahl ausdenkt und den Nenner als auch den Zähler damit multipliziert, also oben und unten multipliziert."
+        },
+        {
+            "question": "Wie kürzt man Brüche?",
+            "answer": "Kürzen kann man Brüche indem man oben und unten mit derselben Zahl dividiert. Alternativ kann man auch Nenner und Zähler als Produkt verschiedener Zahlen schreiben und dann diejenigen streichen die oben und unten auftauchen."
+        },
+        {
+            "question": "Wie nennt man die Stellen vor und nach dem Komma einer Dezimalzahl?",
+            "answer": "Die Stellen vor dem Komma heißen Zehner-, Hunderter-, Tausender-... Stelle und die nach dem Komma Zehntel-Stelle, Hunderstel-, Tausendstel… ."
+        },
+        {
+            "question": "Wie wandelt man eine Dezimalzahl in einen Bruch um?",
+            "answer": "Eine Deziamlzahl lässt sich einfach in einen Bruch schreiben indem man einen Nenner wie 10, 100, 1000, … wählt."
+        },
+        {
+            "question": "Wie schreibt man einen Bruch in eine Dezimalzahl um?",
+            "answer": "Indem man durch Erweitern oder Kürzen den Nenner auf 10, 100, 1000, ... bringt und dann entsprechend den Zähler abschreibt."
+        },
+        {
+            "question": "Wie lauten die Maßeinheiten bei Streckenlängen?",
+            "answer": "Millimeter mm, Centimeter cm, Decimeter dm, Meter m, (Dekameter dkm, Hektometer hm,) Kilometer km."
+        },
+        {
+            "question": "Wie lauten die Maßeinheiten bei Flächen?",
+            "answer": "Quadratmillimeter mm^2, Quadratcentimeter cm^2, Quadratdecimeter dm^2, Quadratmeter m^2, Ar ar oder a, Hektar ha,  Kilometer km^2."
+        },
+        {
+            "question": "Wie lauten die Maßeinheiten bei Volumen?",
+            "answer": "Kubikmillimeter mm^3, Kubikcentimeter cm^3, Kubikdecimeter dm^3 = Liter l, Kubikmeter m^3, ungebräuchlich, ungebräuchlich, Kubikkilometer km^3."
+        },
+        {
+            "question": "Wieviel Liter sind ein Kubikkilometer?",
+            "answer": "1 000 000 000 000 also passen eine Billion Liter in einen Kubikkilometer."
+        },
+        {
+            "question": "Wieviel Gramm sind ein Kilo? Wieviel Kilo sind eine Tonne?",
+            "answer": "Millimeter mm, Centimeter cm, Decimeter dm, Meter m, (Dekameter dkm, Hektometer hm,) Kilometer km."
+        },
+        {
+            "question": "Was macht man bei einem Bruch bei dem der Nenner 1 ist?",
+            "answer": "Man kann den Zähler einfach als Zahl übernehmen also den Bruchstrich und den Nenner weglassen."
+        },
+        {
+            "question": "Wie kann man kürzen wenn bei einem Bruch der Zähler als auch der Nenner auf Null endet oder sogar auf mehreren? Wie erklärt man das?",
+            "answer": "Man kann gleich viele Nullen oben und unten streichen. Das entspricht einfach dem Kürzen mit der Zahl 10."
+        }
+    ]
+}

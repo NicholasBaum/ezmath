@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EzMath</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="root">
+        <div class="card">
+            <div>
+                <p id="question" class="question"></p>
+                <p id="answer" class="answer"></p>
+            </div>
+            <div class="button-cell">
+                <button id="solveBtn">Antwort</button>
+                <button id="nextBtn">Nächste Frage</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = -1;
+        let questions;
+        let question = document.querySelector("#question");
+        let solveBtn = document.querySelector("#solveBtn");
+        let nextBtn = document.querySelector("#nextBtn");
+        let answer = document.querySelector("#answer");
+
+        nextBtn.addEventListener("click", showNextQuestion);
+        solveBtn.addEventListener("click", solveQuestion);
+
+        async function init() {
+            let response = await fetch("data.json");
+            questions = (await response.json()).questions;
+            showNextQuestion();
+        }
+
+        function solveQuestion() {
+            answer.innerHTML = questions[currentIndex].answer;
+            answer.style.display = "block";
+            solveBtn.style.display = "none";
+            nextBtn.style.display = "block";
+        }
+
+        function showNextQuestion() {
+            nextBtn.style.display = "none";
+            answer.style.display = "none";
+            solveBtn.style.display = "block";
+            nextBtn.style.display = "none";
+            currentIndex = (currentIndex + 1) % questions.length;
+            question.innerHTML = questions[currentIndex].question;
+        }
+
+        init();
+
+    </script>
+</body>
+
+</html>
