@@ -43,8 +43,11 @@ body {
 }
 
 .latex-question {    
+    font-weight: 700;
     font-size: 2.0em;
+    font-style: bold;
     color: white;
+    text-align: center;
 }
 
 .latex-answer {
