@@ -30,7 +30,7 @@ body {
 .question {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 3.0em;
+    font-size: 2.5em;
     font-style: bold;
     color: white;
     text-align: center;
@@ -44,7 +44,7 @@ body {
 
 .latex-question {    
     font-weight: 700;
-    font-size: 3.0em;
+    font-size: 2.5em;
     font-style: bold;
     color: white;
     text-align: center;
