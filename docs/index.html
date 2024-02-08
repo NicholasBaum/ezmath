@@ -14,8 +14,8 @@
     <div class="root">
         <div class="card">
             <div style="overflow-y: auto;">
-                <p id="question" class="question"></p>
-                <p id="answer" class="answer"></p>
+                <p id="question" class="latex-question"></p>
+                <p id="answer" class="latex-answer"></p>
             </div>
             <div class="button-cell">
                 <button id="solveBtn">Antwort</button>
@@ -24,6 +24,16 @@
         </div>
     </div>
 
+    <!-- Following script order is important -->
+    <!-- https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference -->
+    <script>
+        MathJax = {
+            startup: {
+                elements: document.getElementsByClassName("latex"),
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         let currentIndex = -1;
         let questions;
@@ -55,10 +65,7 @@
             nextBtn.style.display = "none";
             currentIndex = (currentIndex + 1) % questions.length;
             question.innerHTML = questions[currentIndex].question;
-        }
-
-        function fitText(width, height){
-
+            MathJax.typeset();
         }
 
         init();

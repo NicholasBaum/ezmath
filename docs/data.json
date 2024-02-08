@@ -1,11 +1,11 @@
 {
     "questions": [
         {
-            "question": "Was sind die natürlichen Zahlen N?",
+            "question": "Was sind die natürlichen Zahlen \\(\\mathbb{N}\\)?",
             "answer": "Die Zahlen 1, 2, 3 ..., also die positiven ganzen Zahlen."
         },
         {
-            "question": "Was sind die ganzen Zahlen Z?",
+            "question": "Was sind die ganzen Zahlen \\(\\mathbb{Z}\\)?",
             "answer": "Die Zahlen ... -3, -2, -1, 0, 1, 2, 3, 4 ..., also die natürlichen Zahlen um die Negativen ergänzt."
         },
         {
@@ -17,7 +17,7 @@
             "answer": "-333 ist eine ganze Zahl und auch rationale Zahl, aber keine natürliche Zahl."
         },
         {
-            "question": "Was sind die ratioanlen Zahlen Q?",
+            "question": "Was sind die ratioanlen Zahlen \\(\\mathbb{Q}\\)?",
             "answer": "Die ratioanlen Zahlen sind Brüche bei denen der Nenner als auch der Zähler eine ganze Zahl sind. Auch Kommazahlen bzw. Dezimalzahlen sind rationale Zahlen."
         },
         {
