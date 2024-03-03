@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EzMath</title>
     <link rel="stylesheet" href="card.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -33,7 +34,7 @@
             }
         };
     </script>
-    <script id="MathJax-script"  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         let currentIndex = -1;
         let questions;
@@ -43,29 +44,47 @@
         let answer = document.querySelector("#answer");
 
         nextBtn.addEventListener("click", showNextQuestion);
-        solveBtn.addEventListener("click", solveQuestion);
+        solveBtn.addEventListener("click", showAnswer);
 
         async function init() {
-            let response = await fetch("data.json");
-            questions = (await response.json()).questions;
+            try {
+                const response = await fetch("data.yaml");
+                const yamlText = await response.text();
+                const data = jsyaml.load(yamlText);
+
+                questions = data.questions;
+                if (isDebug())
+                    currentIndex = questions.length - 2
+            } catch (error) {
+                console.error(`Error reading YAML file`, error);
+                return null;
+            }
             showNextQuestion();
         }
 
-        function solveQuestion() {
+        function showNextQuestion() {
+            nextBtn.style.display = "none";
+            answer.style.display = isDebug() ? "block" : "none";
+            solveBtn.style.display = "block";
+            nextBtn.style.display = "none";
+            currentIndex = (currentIndex + 1) % questions.length;
+            question.innerHTML = questions[currentIndex].question;
             answer.innerHTML = questions[currentIndex].answer;
+            MathJax.typeset();
+        }
+
+        function showAnswer() {
             answer.style.display = "block";
             solveBtn.style.display = "none";
             nextBtn.style.display = "block";
         }
 
-        function showNextQuestion() {
-            nextBtn.style.display = "none";
-            answer.style.display = "none";
-            solveBtn.style.display = "block";
-            nextBtn.style.display = "none";
-            currentIndex = (currentIndex + 1) % questions.length;
-            question.innerHTML = questions[currentIndex].question;
-            MathJax.typeset();
+        function isDebug() {
+            return (
+                window.location.hostname === "localhost" ||
+                window.location.hostname === "127.0.0.1" ||
+                window.location.hostname === ""
+            );
         }
 
         init();

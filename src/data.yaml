@@ -1,0 +1,46 @@
+questions:
+  - question: |
+              Wie erweitert man einen Bruch?
+    answer:   |
+              Man mulitpliziert oben und unten mit derselben Zahl.  
+              Z.B. wenn wir mit der 4 erweitern wollen            
+              \[\frac{3}{7} = \frac{3\cdot4}{7\cdot4} = \frac{12}{28}\]              
+    prio: 1.0
+
+  - question: |
+              Wie kürzt man einen Bruch?
+    answer:   |
+              Man dividiert oben und unten mit derselben Zahl.  
+              Folgernder Bruch lässt sich mit der 7 kürzen
+              \[\frac{21}{35} = \frac{21:7}{35:7} = \frac{3}{5}\]              
+    prio: 1.0
+
+  - question: |
+              Wie kann man z.B. für die Addition zweier Brüche sicher einen Hauptnenner finden?
+              Was ist der Nachteil dieser Methode?
+    answer:   |
+              Indem man die beiden Nenner multipliziert. Das Problem dabei ist, dass er unnötig groß werden kann.
+              Deswegen sollte man zuerst schauen, ob man nicht anders einen findet.
+              Bsp.:
+              \[\frac{4}{15}+\frac{7}{12} = \frac{4\cdot12-7\cdot15}{15\cdot12} = \frac{48+105}{180}...\]
+              Die 60 wäre ein kleinerer Hauptnenner gewesen.
+    prio: 1.0
+  
+  - question: |
+              Wie rechnet man folgendes? \[\frac{1}{5}+3\]
+    answer:   |
+              Man wandelt die 3 in einen Bruch um
+              \[\frac{1}{5}+3 = \frac{1}{5}+\frac{15}{5} = \frac{16}{5}\]
+    prio: 1.0
+
+  #- question: |
+  #            Wie erweitert man einen Bruch?
+  #  answer:   |
+  #            Man mulitpliziert oben und unten mit derselben Zahl.
+  #            \[
+  #            \begin{align}
+  #            & \text{Maximize: } 5.00 x_{1} + 7.50 x_{2} \\
+  #            & \text{Subject to:} \\
+  #            \end{align}
+  #            \]
+  #  prio: 1.0
