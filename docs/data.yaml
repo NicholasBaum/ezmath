@@ -16,14 +16,19 @@ questions:
     prio: 1.0
 
   - question: |
-              Wie kann man z.B. für die Addition zweier Brüche sicher einen Hauptnenner finden?
+              Z.B. bei der Addition von Brüchen muss man einen Hauptnenner finden. Wie gelingt dies sicher?
               Was ist der Nachteil dieser Methode?
     answer:   |
-              Indem man die beiden Nenner multipliziert. Das Problem dabei ist, dass er unnötig groß werden kann.
+              Man multipliziert die beiden Nenner. Der Hauptnenner kann hierbei aber unnötig groß werden.
               Deswegen sollte man zuerst schauen, ob man nicht anders einen findet.
               Bsp.:
-              \[\frac{4}{15}+\frac{7}{12} = \frac{4\cdot12-7\cdot15}{15\cdot12} = \frac{48+105}{180}...\]
-              Die 60 wäre ein kleinerer Hauptnenner gewesen.
+              \[
+              \begin{align}
+              \frac{4}{15}+\frac{7}{12} &= \frac{4\cdot12-7\cdot15}{15\cdot12} \\              
+              &= \frac{48+105}{180}... 
+              \end{align}
+              \]              
+              60 wäre ein kleinerer Hauptnenner gewesen.
     prio: 1.0
   
   - question: |
