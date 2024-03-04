@@ -57,7 +57,7 @@ questions:
   - question: |
               Wie rechnet man 0,555 - 19,777 schriftlich aus?
     answer:   |
-              Da die zweite Zahle, der Subtrahend, größer ist als die erste Zahl, muss man minus rechnen mit vertauschten Positionen und ganz wichtig am Ende dafür ein Minus vor das Ergebnis setzen.              
+              Da die zweite Zahl, der Subtrahend, größer ist als die erste Zahl, muss man vertauschen. D.h. man rechnet die größere Zahl minus der kleineren. Ganz wichtig! Am Ende dafür ein Minus vor das Ergebnis zusetzen.              
     prio: 1.0
 
 
@@ -78,7 +78,11 @@ questions:
               Nenne alle Längeneinheiten der Reihe nach mit Umrechnungsfaktor.
     answer:   |
              \[
-             \text{mm} \xtofrom[{\cdot 10}]{:10} \text{cm} \xtofrom[{\cdot 10}]{:10} \text{dm} \xtofrom[{\cdot 10}]{:10} \text{m} \xtofrom[{\cdot 1000}]{:1000} \text{km} \\              
+             \begin{align}
+             \text{mm} &\xtofrom[{\cdot 10}]{:10} \text{cm} \\
+             &\xtofrom[{\cdot 10}]{:10} \text{dm} \\
+             &\xtofrom[{\cdot 10}]{:10} \text{m} \xtofrom[{\cdot 1000}]{:1000} \text{km} \\              
+             \end{align}
              \]         
     prio: 1.0
 
@@ -88,7 +92,10 @@ questions:
               Nenne alle Gewichtseinheiten der Reihe nach mit Umrechnungsfaktor.
     answer:   |
               \[
-              \text{mg} \xtofrom[{\cdot 1000}]{:1000} \text{g} \xtofrom[{\cdot 1000}]{:1000} \text{kg} \xtofrom[{\cdot 1000}]{:1000} \text{t} 
+              \begin{align}
+              \text{mg} &\xtofrom[{\cdot 1000}]{:1000} \text{g} \\
+              &\xtofrom[{\cdot 1000}]{:1000} \text{kg} \xtofrom[{\cdot 1000}]{:1000} \text{t} 
+              \end{align}
               \]              
     prio: 1.0
 
@@ -97,7 +104,13 @@ questions:
               Nenne alle Flächeneinheiten der Reihe nach mit Umrechnungsfaktor.
     answer:   |
               \[
-              \text{mm}^2 \xtofrom[{\cdot 100}]{:100} \text{cm}^2 \xtofrom[{\cdot 100}]{:100} \text{dm}^2 \xtofrom[{\cdot 100}]{:100} \text{m}^2 \xtofrom[{\cdot 100}]{:100} \text{a} \xtofrom[{\cdot 100}]{:100} \text{ha} \xtofrom[{\cdot 100}]{:100} \text{km}^2 \\              
+              \begin{align}
+              \text{mm}^2 &\xtofrom[{\cdot 100}]{:100} \text{cm}^2 \\
+              &\xtofrom[{\cdot 100}]{:100} \text{dm}^2 \\
+              &\xtofrom[{\cdot 100}]{:100} \text{m}^2 \\
+              &\xtofrom[{\cdot 100}]{:100} \text{a} \\
+              &\xtofrom[{\cdot 100}]{:100} \text{ha} \xtofrom[{\cdot 100}]{:100} \text{km}^2 \\              
+              \end{align}
               \]
     prio: 1.0
 
@@ -107,7 +120,11 @@ questions:
               Nenne alle Volumeneinheiten der Reihe nach mit Umrechnungsfaktor.
     answer:   |
               \[
-              \text{mm}^3 \xtofrom[{\cdot 1000}]{:1000} \text{cm}^3 = \text{ml}  \xtofrom[{\cdot 1000}]{:1000} \text{dm}^3 = \text{l}  \xtofrom[{\cdot 1000}]{:1000} \text{m}^3 \\              
+              \begin{align}
+              \text{mm}^3 &\xtofrom[{\cdot 1000}]{:1000} \text{cm}^3 = \text{ml} \\
+              &\xtofrom[{\cdot 1000}]{:1000} \text{dm}^3 = \text{l} \\
+              &\xtofrom[{\cdot 1000}]{:1000} \text{m}^3 \\              
+              \end{align}
               \]         
     prio: 1.0
 
