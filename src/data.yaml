@@ -153,9 +153,9 @@ questions:
 
 
   - question: |
-              Sprich folgende Zahl laut aus 21 768 300 155! :-)
+              21 768 300 155, sprich dies laut aus? :-)
     answer:   |
-              Einundzwanzig Miiliarden siebenhundertachtundsechzig Millionen dreihunderttausendeinhundertfünfundfünfzig
+              Einundzwanzig Miiliarden siebenhundert achtundsechzig Millionen dreihundert tausend einhundert fünfundfünfzig
     prio: 1.0
 
 
