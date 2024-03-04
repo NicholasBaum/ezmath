@@ -7,6 +7,8 @@ questions:
               \[\frac{3}{7} = \frac{3\cdot4}{7\cdot4} = \frac{12}{28}\]              
     prio: 1.0
 
+
+
   - question: |
               Wie kürzt man einen Bruch?
     answer:   |
@@ -14,6 +16,8 @@ questions:
               Folgernder Bruch lässt sich mit der 7 kürzen
               \[\frac{21}{35} = \frac{21:7}{35:7} = \frac{3}{5}\]              
     prio: 1.0
+
+
 
   - question: |
               Z.B. bei der Addition von Brüchen muss man einen Hauptnenner finden. Wie gelingt dies sicher?
@@ -24,19 +28,118 @@ questions:
               Bsp.:
               \[
               \begin{align}
-              \frac{4}{15}+\frac{7}{12} &= \frac{4\cdot12-7\cdot15}{15\cdot12} \\              
+              \frac{4}{15}+\frac{7}{12} &= \frac{4\cdot12+7\cdot15}{15\cdot12} \\              
               &= \frac{48+105}{180}... 
               \end{align}
               \]              
               60 wäre ein kleinerer Hauptnenner gewesen.
     prio: 1.0
   
+
+
   - question: |
               Wie rechnet man folgendes? \[\frac{1}{5}+3\]
     answer:   |
               Man wandelt die 3 in einen Bruch um
               \[\frac{1}{5}+3 = \frac{1}{5}+\frac{15}{5} = \frac{16}{5}\]
     prio: 1.0
+
+
+
+  - question: |
+              Wie addiert man 0,5465 und 15.49 schriftlich.
+    answer:   |
+              Man schreibt sie untereinander, wobei das Komma an derselben Stelle stehen muss und fügt Nullen hinzu damit beide Zahlen dieselbe Anzahl an Stellen hat.              
+    prio: 1.0
+
+
+
+  - question: |
+              Wie rechnet man 0,555 - 19,777 schriftlich aus?
+    answer:   |
+              Da die zweite Zahle, der Subtrahend, größer ist als die erste Zahl, muss man minus rechnen mit vertauschten Positionen und ganz wichtig am Ende dafür ein Minus vor das Ergebnis setzen.              
+    prio: 1.0
+
+
+
+  - question: |
+              Welche Größeneinheiten kennst du und worauf beziehen sie sich?
+    answer:   |
+              Längeneinheiten wie Zentimeter.
+              Gewichtseinheit wie Kilogramm.
+              Flächeneinheit wie Quadratkilometer.
+              Volumeneinheit wie Liter oder Kubikzentimeter.
+              Zeiteinheit wie Sekunde.
+              Winkeleinheit wie Grad °.
+    prio: 1.0
+
+
+  - question: |
+              Nenne alle Längeneinheiten der Reihe nach mit Umrechnungsfaktor.
+    answer:   |
+             \[
+             \text{mm} \xtofrom[{\cdot 10}]{:10} \text{cm} \xtofrom[{\cdot 10}]{:10} \text{dm} \xtofrom[{\cdot 10}]{:10} \text{m} \xtofrom[{\cdot 1000}]{:1000} \text{km} \\              
+             \]         
+    prio: 1.0
+
+
+
+  - question: |
+              Nenne alle Gewichtseinheiten der Reihe nach mit Umrechnungsfaktor.
+    answer:   |
+              \[
+              \text{mg} \xtofrom[{\cdot 1000}]{:1000} \text{g} \xtofrom[{\cdot 1000}]{:1000} \text{kg} \xtofrom[{\cdot 1000}]{:1000} \text{t} 
+              \]              
+    prio: 1.0
+
+
+  - question: |
+              Nenne alle Flächeneinheiten der Reihe nach mit Umrechnungsfaktor.
+    answer:   |
+              \[
+              \text{mm}^2 \xtofrom[{\cdot 100}]{:100} \text{cm}^2 \xtofrom[{\cdot 100}]{:100} \text{dm}^2 \xtofrom[{\cdot 100}]{:100} \text{m}^2 \xtofrom[{\cdot 100}]{:100} \text{a} \xtofrom[{\cdot 100}]{:100} \text{ha} \xtofrom[{\cdot 100}]{:100} \text{km}^2 \\              
+              \]
+    prio: 1.0
+
+
+
+  - question: |
+              Nenne alle Volumeneinheiten der Reihe nach mit Umrechnungsfaktor.
+    answer:   |
+              \[
+              \text{mm}^3 \xtofrom[{\cdot 1000}]{:1000} \text{cm}^3 = \text{ml}  \xtofrom[{\cdot 1000}]{:1000} \text{dm}^3 = \text{l}  \xtofrom[{\cdot 1000}]{:1000} \text{m}^3 \\              
+              \]         
+    prio: 1.0
+
+
+  - question: |
+              Wie berechnet man die Fläche eines Rechtecks?
+    answer:   |
+              Länge mal Breite. Beachte die korrekte Maßeinheit beim rechnen. (a\(\cdot\)b)
+    prio: 1.0
+
+
+  - question: |
+              Wie berechnet man das Volumen eines Quaders?
+    answer:   |
+              Länge mal Breite mal Höhe. Beachte die korrekte Maßeinheit beim rechnen. (a\(\cdot\)b\(\cdot\)c)
+    prio: 1.0
+
+
+  - question: |
+              Beim Umrechnen von Einheiten muss man meist mit 10, 100 oder 1000 multiplizieren oder dividieren. Wie macht man das einfach?
+    answer:   |
+              Man muss nur das Komma verschieben. Beim multiplizieren wird die Zahl größer also muss das Komma nach rechts wandern und umgekehrt für die Division.
+              Für 10 muss es um eine Stelle verschoben werden usw.
+              Falls die Zahl gar kein Komma hat, dann muss man sich eines ganz rechts hinsetzen z.B. 5000m = 5000,0m = 5,0km.
+    prio: 1.0
+
+
+
+
+
+
+   
 
   #- question: |
   #            Wie erweitert man einen Bruch?

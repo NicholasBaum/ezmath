@@ -29,9 +29,18 @@
     <!-- https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference -->
     <script>
         MathJax = {
+            loader: { load: ['[tex]/extpfeil'] },
+            tex: { packages: { '[+]': ['extpfeil'] } },
             startup: {
                 elements: document.getElementsByClassName("latex"),
-            }
+                ready: () => {
+                    MathJax.startup.defaultReady();
+                    MathJax.startup.promise.then(() => {
+                        init();
+                    });
+                }
+            },
+
         };
     </script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -87,7 +96,8 @@
             );
         }
 
-        init();
+        // page is initated when mathjax has loaded see above
+        //init();
 
     </script>
 </body>
